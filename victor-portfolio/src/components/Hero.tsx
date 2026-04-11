@@ -10,13 +10,14 @@ export default function Hero() {
           Hi, I'm Victor
         </h1>
 
-        <h2 className="text-4xl mt-4 text-pink-400 font-semibold">
+        <h2 className="text-3xl mt-4 text-pink-400 font-semibold">
           Full-Stack Developer
         </h2>
 
-        <p className="mt-6 text-gray-300 text-lg">
-          I build scalable and performant web applications using React, Node.js
-          and MongoDB.
+        <p className="mt-6 text-gray-300 text-lg max-w-lg">
+          I build scalable and performant web applications using the MERN stack,
+          focusing on clean architecture, user experience and real-world
+          solutions.
         </p>
 
         <div className="mt-8 flex gap-4">
