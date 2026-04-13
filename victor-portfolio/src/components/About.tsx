@@ -1,10 +1,11 @@
 export default function About() {
   return (
-    <section id="about" className="px-10 py-32 bg-slate-900">
-      <h2 className="text-3xl font-bold mb-6">About Me</h2>
+    <section className="py-20 px-6 md:px-10 max-w-4xl mx-auto text-center">
+      <h2 className="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
 
-      <div className="h-1 w-16 bg-pink-500 mx-auto mb-6 rounded"></div>
-      <p className="text-gray-300 text-lg leading-relaxed mt-6">
+      <div className="w-16 h-1 bg-pink-500 mx-auto mb-8 rounded-full"></div>
+
+      <p className="text-gray-300 text-lg leading-relaxed">
         Full-stack developer with hands-on experience building real web
         applications using the MERN stack. Former Teacher Assistant mentoring
         30+ students, with strong focus on clean code, problem-solving and

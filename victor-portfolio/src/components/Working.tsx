@@ -1,16 +1,25 @@
 export default function Working() {
+  const items = [
+    "Building a full-stack application solving real user problems",
+    "Improving backend architecture and API performance",
+    "Learning advanced React patterns and best practices",
+  ];
+
   return (
-    <section className="px-10 py-24 bg-slate-800">
-      <h2 className="text-3xl font-bold mb-8">Currently Working On</h2>
+    <section className="py-20 px-6 md:px-10 max-w-7xl mx-auto">
+      <h2 className="text-3xl md:text-4xl font-bold mb-12">
+        Currently Working On
+      </h2>
 
-      <div className="space-y-4 text-gray-300 max-w-xl">
-        <p>
-          → Building a full-stack application to solve real-world user problems
-        </p>
-
-        <p>→ Improving backend architecture and API performance</p>
-
-        <p>→ Learning advanced React patterns and best practices</p>
+      <div className="grid md:grid-cols-3 gap-6">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className="bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur-lg hover:scale-105 transition"
+          >
+            <p className="text-gray-300">{item}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
