@@ -1,17 +1,4 @@
 export default function Hero() {
-  const scrollTo = (id: string) => {
-    const element = document.getElementById(id);
-    if (!element) return;
-
-    const offset = 80;
-    const top = element.getBoundingClientRect().top + window.scrollY - offset;
-
-    window.scrollTo({
-      top,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <section
       id="home"
@@ -49,55 +36,61 @@ export default function Hero() {
               key={tech}
               src={`/icons/${tech}.svg`}
               alt={tech}
-              className="w-8 h-8 opacity-80 hover:opacity-100 transition"
+              className="w-8 h-8 opacity-80 hover:opacity-100 hover:scale-110 transition"
             />
           ))}
         </div>
 
         {/* BUTTONS */}
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          <button
-            onClick={() => scrollTo("projects")}
-            className="bg-purple-500 hover:bg-purple-400 px-6 py-3 rounded-xl font-semibold transition shadow-lg"
+          <a
+            href="#projects"
+            className="bg-purple-500 hover:bg-purple-400 px-6 py-3 rounded-xl font-semibold transition shadow-lg text-center"
           >
             View Projects
-          </button>
+          </a>
 
-          <button
-            onClick={() => scrollTo("about")}
-            className="border border-purple-400 px-6 py-3 rounded-xl hover:bg-purple-500/10 transition"
+          <a
+            href="#about"
+            className="border border-purple-400 px-6 py-3 rounded-xl hover:bg-purple-500/10 transition text-center"
           >
             Contact Me
-          </button>
+          </a>
         </div>
       </div>
 
       {/* RIGHT */}
       <div className="flex justify-center w-full md:w-auto">
-        <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 w-full max-w-md lg:max-w-lg text-center shadow-[0_0_60px_rgba(168,85,247,0.25)]">
+        <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-10 w-full max-w-md lg:max-w-lg text-center shadow-[0_0_80px_rgba(168,85,247,0.3)]">
+          {/* FOTO */}
           <img
             src="/profile.jpg"
             alt="Victor"
-            className="w-44 h-44 md:w-56 md:h-56 mx-auto rounded-2xl object-cover mb-6"
+            className="w-44 h-44 md:w-60 md:h-60 mx-auto rounded-2xl object-cover mb-6"
           />
 
+          {/* SOCIAL */}
           <div className="flex justify-center gap-6 text-gray-300 text-sm mb-4">
             <a
               href="https://github.com/vmosque"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:text-pink-400 transition"
             >
               GitHub
             </a>
+
             <a
               href="https://linkedin.com/in/vicmosqueda"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:text-pink-400 transition"
             >
               LinkedIn
             </a>
           </div>
 
+          {/* CV */}
           <h3 className="text-lg font-semibold mb-3">Curriculum</h3>
 
           <div className="flex gap-3">
