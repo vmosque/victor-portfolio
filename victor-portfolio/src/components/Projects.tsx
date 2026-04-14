@@ -2,35 +2,46 @@ import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <section id="projects" className="px-10 py-24 bg-slate-900 scroll-mt-24">
-      <h2 className="text-3xl font-bold mb-12">Projects</h2>
+    <section
+      id="projects"
+      className="px-6 md:px-10 py-28 max-w-7xl mx-auto scroll-mt-24"
+    >
+      {/* HEADER */}
+      <div className="mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">Projects</h2>
+        <p className="text-gray-400 max-w-2xl">
+          A selection of projects focused on real-world problems, performance
+          and scalable architecture.
+        </p>
+      </div>
 
-      <div className="grid md:grid-cols-3 gap-8">
+      {/* GRID */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
         <ProjectCard
-          title="Full-Stack MERN App with Authentication"
-          description="Full-stack web application with authentication, REST APIs and CRUD operations."
+          title="NearBite – Food Sharing Platform"
+          description="Full-stack platform that connects neighbors to share home-cooked meals. Includes authentication, REST APIs and real-time data handling."
           stack={["React", "Node.js", "MongoDB", "Express"]}
           image="/project1.png"
-          github="#"
+          github="https://github.com/vmosque/nearbite-client"
           live="https://nearbite.netlify.app"
         />
 
         <ProjectCard
-          title="React Frontend Application"
-          description="Responsive frontend app with API integration and component-based architecture."
+          title="FoundIt – Product Discovery App"
+          description="Responsive frontend application with API integration, dynamic filtering and reusable component architecture."
           stack={["React", "JavaScript", "API"]}
           image="/project2.png"
-          github="#"
-          live="https://foundit-app.netlify.app"
+          github="https://github.com/wai-coding/foundit-app"
+          live="https://foundit-app.netlify.app/"
         />
 
         <ProjectCard
-          title="JavaScript Coffee Game"
-          description="Browser-based game with custom logic, timers, scoring and DOM manipulation."
+          title="Coffee Game – JavaScript Logic Project"
+          description="Interactive browser game built with pure JavaScript. Features custom game logic, timers, scoring system and DOM manipulation."
           stack={["JavaScript", "HTML", "CSS"]}
           image="/project3.png"
-          github="https://github.com/vmosque/not-starbucks"
-          live="#"
+          github="https://github.com/vmosque/not-starbucks-coffee-shop"
+          live="https://vmosque.github.io/not-starbucks-coffee-shop/"
         />
       </div>
     </section>
