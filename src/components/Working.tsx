@@ -2,7 +2,6 @@ export default function Working() {
   const items = [
     "Building a full-stack application solving real user problems",
     "Improving backend architecture and API performance",
-    "Improving backend architecture and API performance",
   ];
 
   return (
