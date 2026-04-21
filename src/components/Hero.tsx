@@ -95,7 +95,7 @@ export default function Hero() {
 
           <div className="flex gap-3">
             <a
-              href="https://drive.google.com/file/d/126selxTELdFFN7vIKb40-YtoMXVCFQBm/view"
+              href="https://drive.google.com/file/d/1LIDwexqmzm_8wcn-9kCrDfGexvt4CGjQ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 border border-white/10 rounded-lg py-2 hover:bg-white/10 text-sm"
@@ -104,7 +104,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://drive.google.com/file/d/126selxTELdFFN7vIKb40-YtoMXVCFQBm/view"
+              href="https://drive.google.com/file/d/1LIDwexqmzm_8wcn-9kCrDfGexvt4CGjQ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 bg-purple-500 rounded-lg py-2 text-sm hover:bg-purple-400"
